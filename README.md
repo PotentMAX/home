@@ -1,6 +1,6 @@
-# 😺 CattyMod
+# 😺 PotentMAX
 
-Welcome to **CattyMod**, a scratch mod for everyone :)
+Welcome to **PotentMAX**, a scratch mod for everyone :)
 
 CattyMod is based on **Scratch** and  **TurboWarp** so you get all the features you know and love, plus more!
 
