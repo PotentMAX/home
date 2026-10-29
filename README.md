@@ -1,13 +1,13 @@
-# 😺 PotentMAX
+# ✨ PotentMAX
 
 Welcome to **PotentMAX**, a scratch mod for everyone :)
 
-CattyMod is based on **Scratch** and  **TurboWarp** so you get all the features you know and love, plus more!
+PotentMAX is based on **CattyMod**, **TurboWarp** and **Scratch** so you get all the features you know and love, plus more!
 
 ---
 
-🌐 Try the editor directly in your browser: [studio.cattymod.app](https://studio.cattymod.app/editor)
+🌐 Try the editor directly in your browser: [potentmax.github.io/](https://potentmax.github.io/)
 
 ---
 
-⚠️ **Note:** CattyMod is **not affiliated** with Scratch, the Scratch Team, or the Scratch Foundation.
+⚠️ **Note:** PotentMAX is **not affiliated** with Scratch, the Scratch Team, or the Scratch Foundation.
