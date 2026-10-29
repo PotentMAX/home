@@ -5,15 +5,15 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>404 Not Found</title>
-    <!-- CattyMod navbar -->
-    <script src="https://cattymod.app/assets/navbar.js" defer></script>
+    <!-- PotentMAX navbar -->
+    <script src="https://potentmax.github.io/home/assets/navbar.js" defer></script>
     <script>
       (function() {
         const host = window.location.host;
         const path = window.location.pathname;
         const hash = window.location.hash;
-        // Only run on cattymod.app and its subdomains
-        if (!host.endsWith("cattymod.app")) return;
+        // Only run on potentmax.github.io and its subdomains
+        if (!host.startsWith("potentmax.github.io")) return;
         // Don't redirect the dedicated 404 page
         if (path === "/404" || path === "/404/") return;
         let match = null;
@@ -41,14 +41,14 @@
         }
         // Redirect
         if (match) {
-          window.location.replace("https://studio.cattymod.app" + mode + "#" + match);
+          window.location.replace("https://potentmax.github.io" + mode + "#" + match);
         }
       })();
     </script>
     <style>
       :root {
-        --scratch-blue: #4D97FF;
-        --scratch-blue-dark: #3373CC;
+        --scratch-blue: #6A4CFF;
+        --scratch-blue-dark: #4327CF;
         --background: #ffffff;
         --text: #575E75;
       }
@@ -71,7 +71,7 @@
       }
 
       /*
-     * The CattyMod navbar is injected at the very top
+     * The PotentMAX navbar is injected at the very top
      * of 
 						<body> by navbar.js.
      */
@@ -115,7 +115,7 @@
 
       @media (prefers-color-scheme: dark) {
         :root {
-          --background: #111827;
+          --background: #1C1127
           --text: #e5e7eb;
         }
 
@@ -133,13 +133,13 @@
         }
 
         a {
-          color: #7db8ff;
+          color: #C07DFF;
         }
       }
     </style>
   </head>
   <body>
-    <!-- navbar.js automatically inserts the CattyMod navbar here -->
+    <!-- navbar.js automatically inserts the PotentMAX navbar here -->
     <header>
       <h1>404 Not Found</h1>
     </header>
