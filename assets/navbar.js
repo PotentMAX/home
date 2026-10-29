@@ -2,14 +2,14 @@
     // 1. Inject scoped CSS styles into the <head>
     const cssStyles = `
         /* CSS Reset variables scoped specifically for the navbar container */
-        .cattymod-navbar-wrapper,
-        .cattymod-navbar-wrapper *,
-        .cattymod-navbar-wrapper :before,
-        .cattymod-navbar-wrapper :after {
+        .potentmax-navbar-wrapper,
+        .potentmax-navbar-wrapper *,
+        .potentmax-navbar-wrapper :before,
+        .potentmax-navbar-wrapper :after {
             box-sizing: border-box;
             border-width: 0;
             border-style: solid;
-            border-color: #e5e7eb;
+            border-color: #E8E5EB;
             --tw-border-spacing-x: 0;
             --tw-border-spacing-y: 0;
             --tw-translate-x: 0;
@@ -22,15 +22,15 @@
         }
 
         /* Navbar-specific styling and theme variables */
-        .cattymod-navbar-wrapper {
-            --background: 200 20% 12%;
+        .potentmax-navbar-wrapper {
+            --background: 280 20% 12%;
             --foreground: 0 0% 100%;
-            --card: 200 15% 16%;
-            --primary: 197 100% 40%;
+            --card: 280 15% 16%;
+            --primary: 280 100% 40%;
             --secondary: 270 38% 49%;
-            --muted: 200 15% 20%;
-            --accent: 192 100% 66%;
-            --border: 200 15% 22%;
+            --muted: 280 15% 20%;
+            --accent: 280 100% 66%;
+            --border: 280 15% 22%;
             --radius: .5rem;
 
             background-color: hsl(var(--background));
@@ -42,95 +42,95 @@
             width: 100%;
         }
 
-        .cattymod-navbar-wrapper a {
+        .potentmax-navbar-wrapper a {
             color: inherit;
             text-decoration: inherit;
         }
 
-        .cattymod-navbar-wrapper .flex {
+        .potentmax-navbar-wrapper .flex {
             display: flex;
         }
 
-        .cattymod-navbar-wrapper .items-center {
+        .potentmax-navbar-wrapper .items-center {
             align-items: center;
         }
 
-        .cattymod-navbar-wrapper .gap-2 {
+        .potentmax-navbar-wrapper .gap-2 {
             gap: .5rem;
         }
 
-        .cattymod-navbar-wrapper .gap-4 {
+        .potentmax-navbar-wrapper .gap-4 {
             gap: 1rem;
         }
 
-        .cattymod-navbar-wrapper .px-4 {
+        .potentmax-navbar-wrapper .px-4 {
             padding-left: 1rem;
             padding-right: 1rem;
         }
 
-        .cattymod-navbar-wrapper .py-2 {
+        .potentmax-navbar-wrapper .py-2 {
             padding-top: .5rem;
             padding-bottom: .5rem;
         }
 
-        .cattymod-navbar-wrapper .h-10 {
+        .potentmax-navbar-wrapper .h-10 {
             height: 2.5rem;
         }
 
-        .cattymod-navbar-wrapper .w-10 {
+        .potentmax-navbar-wrapper .w-10 {
             width: 2.5rem;
         }
 
-        .cattymod-navbar-wrapper .h-4 {
+        .potentmax-navbar-wrapper .h-4 {
             height: 1rem;
         }
 
-        .cattymod-navbar-wrapper .w-4 {
+        .potentmax-navbar-wrapper .w-4 {
             width: 1rem;
         }
 
-        .cattymod-navbar-wrapper .rounded {
+        .potentmax-navbar-wrapper .rounded {
             border-radius: .25rem;
         }
 
-        .cattymod-navbar-wrapper .rounded-md {
+        .potentmax-navbar-wrapper .rounded-md {
             border-radius: calc(var(--radius) - 2px);
         }
 
-        .cattymod-navbar-wrapper .px-3 {
+        .potentmax-navbar-wrapper .px-3 {
             padding-left: .75rem;
             padding-right: .75rem;
         }
 
-        .cattymod-navbar-wrapper .py-1\\.5 {
+        .potentmax-navbar-wrapper .py-1\\.5 {
             padding-top: .375rem;
             padding-bottom: .375rem;
         }
 
-        .cattymod-navbar-wrapper .text-sm {
+        .potentmax-navbar-wrapper .text-sm {
             font-size: .875rem;
             line-height: 1.25rem;
         }
 
-        .cattymod-navbar-wrapper .font-semibold {
+        .potentmax-navbar-wrapper .font-semibold {
             font-weight: 600;
         }
 
-        .cattymod-navbar-wrapper .text-white {
+        .potentmax-navbar-wrapper .text-white {
             color: #fff;
         }
 
-        .cattymod-navbar-wrapper .transition-colors {
+        .potentmax-navbar-wrapper .transition-colors {
             transition-property: color, background-color, border-color;
             transition-timing-function: cubic-bezier(.4, 0, .2, 1);
             transition-duration: 150ms;
         }
 
-        .cattymod-navbar-wrapper .hover\\:bg-white\\/10:hover {
+        .potentmax-navbar-wrapper .hover\\:bg-white\\/10:hover {
             background-color: rgb(255 255 255 / 0.1);
         }
 
-        .cattymod-navbar-wrapper .ml-auto {
+        .potentmax-navbar-wrapper .ml-auto {
             margin-left: auto;
         }
 
@@ -139,37 +139,38 @@
          *
          * At widths of 459px or less:
          * - Hide the text labels for navbar buttons
-         * - Keep the CattyMod logo visible
+         * - Keep the PotentMAX logo visible
          * - Increase Lucide icons to 24x24
-         * - Do not affect cattymod.svg
+         * - Do not affect potentmax.svg
+         * - "NO WAY!" >:(
          */
         @media (max-width: 459px) {
-            .cattymod-navbar-wrapper nav > a:not(:first-child) span,
-            .cattymod-navbar-wrapper nav > div span {
+            .potentmax-navbar-wrapper nav > a:not(:first-child) span,
+            .potentmax-navbar-wrapper nav > div span {
                 display: none;
             }
 
-            .cattymod-navbar-wrapper nav a svg.lucide {
+            .potentmax-navbar-wrapper nav a svg.lucide {
                 width: 24px !important;
                 height: 24px !important;
             }
         }
 
         /* External-site warning */
-        .cattymod-external-notice {
+        .potentmax-external-notice {
             width: 100%;
             padding: 10px 16px;
             box-sizing: border-box;
-            background: #fff3cd;
-            color: #664d03;
-            border-bottom: 1px solid #ffecb5;
+            background: #FACDFF;
+            color: #470366;
+            border-bottom: 1px solid #E4B5FF;
             font-family: ui-sans-serif, system-ui, sans-serif;
             font-size: 14px;
             line-height: 1.5;
             text-align: center;
         }
 
-        .cattymod-external-notice a {
+        .potentmax-external-notice a {
             color: inherit;
             font-weight: 700;
             text-decoration: underline;
@@ -197,25 +198,25 @@
     // 3. Dynamically generate the Settings URL with the current page's URL
     const currentUrlEncoded = encodeURIComponent(window.location.href);
     const settingsUrl =
-        `https://studio.cattymod.app/settings?from=${currentUrlEncoded}`;
+        `https://potentmax.github.io/settings?from=${currentUrlEncoded}`;
 
     // 4. Create the container wrapper and insert the HTML template
     const wrapperDiv = document.createElement('div');
-    wrapperDiv.className = "cattymod-navbar-wrapper";
+    wrapperDiv.className = "potentmax-navbar-wrapper";
 
     const navHTML = `
         <nav class="flex gap-4 px-4 py-2">
 
-            <a href="https://cattymod.app" class="flex items-center gap-2">
+            <a href="https://potentmax.github.io/home" class="flex items-center gap-2">
                 <img
-                    src="https://cattymod.app/assets/cattymod.svg"
-                    alt="CattyMod icon"
+                    src="https://potentmax.github.io/home/assets/potentmax.svg"
+                    alt="PotentMAX icon"
                     class="h-10 w-10 rounded"
                 >
             </a>
 
             <a
-                href="https://studio.cattymod.app/editor"
+                href="https://potentmax.github.io/editor"
                 class="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
                 <i data-lucide="plus-circle" class="w-4 h-4 text-white"></i>
@@ -223,7 +224,7 @@
             </a>
 
             <a
-                href="https://cattymod.app/explore/"
+                href="https://potentmax.github.io/home/explore/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
@@ -236,7 +237,7 @@
             <div class="ml-auto flex gap-4">
 
                 <a
-                    href="https://cattymod.app/commits"
+                    href="https://potentmax.github.io/home/commits"
                     onclick="window.open(this.href, 'commitsWindow', 'width=1000,height=700,resizable=yes,scrollbars=yes'); return false;"
                     class="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
                 >
@@ -262,32 +263,32 @@
     document.body.prepend(wrapperDiv);
 
     /*
-     * cattymod.app
-     * www.cattymod.app
-     * studio.cattymod.app
-     * anything.cattymod.app
+     * potentmax.github.io
+     * www.potentmax.github.io
+     * potentmax.github.io
+     * potentmax.github.io/anything
      *
-     * are all considered official CattyMod domains.
+     * are all considered official PotentMAX domains.
      */
     const hostname = window.location.hostname.toLowerCase();
 
-    const isCattyModDomain =
-        hostname === "cattymod.app" ||
-        hostname.endsWith(".cattymod.app");
+    const isPotentMAXHost =
+        hostname === "potentmax.github.io" ||
+        hostname.startsWith("potentmax.github.io/");
 
-    // Show the warning on every non-CattyMod website
-    if (!isCattyModDomain) {
+    // Show the warning on every non-PotentMAX website
+    if (!isPotentMAXHost) {
         const noticeDiv = document.createElement("div");
-        noticeDiv.className = "cattymod-external-notice";
+        noticeDiv.className = "potentmax-external-notice";
 
         noticeDiv.innerHTML = `
-            This page is not officially by CattyMod.
+            This page is an unofficial mod of CattyMod.
             <a
-                href="https://cattymod.app"
+                href="potentmax.github.io/home"
                 target="_blank"
                 rel="noopener noreferrer"
-            >Go to cattymod.app</a>
-            to get a private and powerful Scratch mod.
+            >Go to potentmax.github.io/home</a>
+            if you want to get a private and powerful Scratch mod.
         `;
 
         // Immediately below the navbar
